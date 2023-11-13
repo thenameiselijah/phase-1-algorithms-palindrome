@@ -1,10 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const lowerCaseWord = word.toLowerCase();
+
+  for (let i = 0; i < lowerCaseWord.length / 2; i++) {
+    if (lowerCaseWord[i] !== lowerCaseWord[lowerCaseWord.length - 1 - i]) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
-/* 
-  Add your pseudocode here
-*/
+/*
+
+Add your pseudocode here
 
 /*
   Add written explanation of your solution here
